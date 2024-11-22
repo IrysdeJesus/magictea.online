@@ -847,19 +847,16 @@ text-align: center;
 </style>
 <div class="html-gXKGFt6193354-element ">
 <div>
-<!-- HOTMART - Upsell Widget -->
-<div id="box_hotmart"></div>
-<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+<!-- HOTMART - Sales Funnel Widget -->
+<!--- sales funnel container --->
+<div id="hotmart-sales-funnel"></div>
 
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
 <script>
-opts = {
-key: 'USL-157790-550686-eea72cd5d3a2192a54218fac4355f095',
-width: '650' ,
-height: '420'
-};
-Upsell.Widget.show(opts);
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
 </script>
-<!-- HOTMART - Upsell Widget [end] -->
+<!-- HOTMART - Sales Funnel Widget -->
                 </style>
                 <div class="atomicat-container atomicat-inner-container">
                     <div class="atomicat-outer-container atomicat-container-full-width atomicat-container-56ada10">
