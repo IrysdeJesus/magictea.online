@@ -16,10 +16,15 @@
 <script src="js/a.js" async=""></script>
 
 <script>
-      if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) || (window.navigator.language === 'pt' || window.navigator.language === 'pt-BR')) {
-          window.location.href = ‘https://gemaacademia.online/front-comesticos‘;
-      }
-    </script>
+// Função para detectar o tipo de dispositivo
+function isMobileDevice() {
+return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+// Redirecionamento
+if (!isMobileDevice()) {
+window.location.href = "https://gemaacademia.online/front-comesticos";
+}
+</script>
   
 
 </head>
